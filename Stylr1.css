@@ -1,0 +1,125 @@
+/* Paleta de colores: Rosas, blancos y grises suaves */
+:root {
+    --color-fondo: #fff5f7;
+    --color-primario: #ff4d6d;
+    --color-secundario: #c9184a;
+    --color-texto: #594d5b;
+    --blanco: #ffffff;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabecera */
+.header {
+    background-color: var(--color-primario);
+    color: var(--blanco);
+    padding: 40px 0;
+    border-bottom: 5px solid var(--color-secundario);
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* Botón con efecto */
+button {
+    background-color: var(--color-secundario);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: var(--color-primario);
+    transform: scale(1.1);
+}
+
+/* Lista de motivos */
+ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+    background: var(--blanco);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+li::before {
+    content: "❤️";
+    position: absolute;
+    left: 0;
+}
+
+/* Sección de multimedia */
+.foto img {
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 5px solid var(--blanco);
+    transition: transform 0.5s ease;
+}
+
+.foto img:hover {
+    transform: rotate(2deg);
+}
+
+.audio {
+    margin: 30px 0;
+}
+
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(100%) contrast(90%) invert(12%);
+    width: 80%;
+}
+
+/* Ajuste extra para centrar la lista mejor */
+.container ul {
+    display: inline-block;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.container h2 {
+    color: var(--color-secundario);
+    margin-top: 40px;
+}
+
+/* Pie de página */
+.main-footer {
+    background-color: var(--color-texto);
+    color: var(--blanco);
+    padding: 20px 0;
+    margin-top: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
